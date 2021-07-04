@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const ClosedStyle = styled.div`
 min-height:80vh;
+
 `
 
 function Closed() {

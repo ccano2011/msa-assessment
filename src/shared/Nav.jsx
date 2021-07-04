@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 const NavStyling = styled.div`
 height: 10vh;
+margin-bottom: 3vh;
 `
 
 const Title = styled.h1`
+padding-top: 15px;
 color:whitesmoke;
 `
 
