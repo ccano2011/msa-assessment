@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom' //This is an alias to workaround { Link } declarations
 
 const SidebarContainer = styled.aside` //aside is an HTML element that is meant to be an acutal aside to the text content
 @media screen and (min-width:769px){
