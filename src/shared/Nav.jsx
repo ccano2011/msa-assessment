@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 
 const NavStyling = styled.div`
 height: 10vh;
-margin-bottom: 3vh;
+margin-bottom: 7vh;
 `
 
 const Title = styled.h1`
 padding-top: 15px;
 color:whitesmoke;
+margin-bottom: 10px;
+margin-left:5vw;
 `
 
 const Tabs = styled.ul`

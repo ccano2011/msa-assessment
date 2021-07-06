@@ -10,7 +10,7 @@ position: fixed;
 z-index:999;
 width:100%;
 height: 80vh;
-background:black;
+background: #000000;
 align-items: center;
 border-radius: 15px;
 bottom:0;
@@ -29,13 +29,13 @@ display: none;
     color:white;
 }
 `;
-const SidebarMenu = styled.ul`
-display: grid;
-grid-template-columns:1fr;
-grid-template-rows: repeat(6, 100px);
-padding-left:0;
-text-align: center;
-`;
+// const SidebarMenu = styled.ul`
+// display: grid;
+// grid-template-columns:1fr;
+// grid-template-rows: repeat(6, 100px);
+// padding-left:0;
+// text-align: center;
+// `;
 
 
 function AddTask({ children, isOpen, toggle }) {

@@ -5,10 +5,12 @@ import styled from 'styled-components';
 const Button = styled.div`
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -50px;
-    margin-right:50px;
+    margin-top: -100px;
+    margin-right:40px;
     height: 60px;
     width: auto;
+    position: relative;
+    z-index: 10;
 `
 
 function Add({ toggle }) {
