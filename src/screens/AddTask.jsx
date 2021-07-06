@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SidebarContainer = styled.aside` //aside is an HTML element that is meant to be an acutal aside to the text content
-@media screen and (min-width:769px){
-display:none;
-}
 position: fixed;
 z-index:999;
 width:100%;
@@ -20,10 +17,7 @@ bottom:${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 const SidebarWrapper = styled.div`
-display: none;
-@media screen and (max-width:768px){
     display: grid;
-}
 .ls{
     color:white;
 }
