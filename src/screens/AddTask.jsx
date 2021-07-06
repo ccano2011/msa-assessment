@@ -2,18 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SidebarContainer = styled.aside` //aside is an HTML element that is meant to be an acutal aside to the text content
-position: fixed;
-z-index:999;
-width:100%;
-height: 80vh;
-background: #000000;
-align-items: center;
-border-radius: 15px;
-bottom:0;
-left:0;
-transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-bottom:${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    position: fixed;
+    z-index:999;
+    width:100%;
+    height: 80vh;
+    background: #000000;
+    align-items: center;
+    border-radius: 15px;
+    bottom:0;
+    left:0;
+    transition: 0.3s ease-in-out;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    bottom:${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 const SidebarWrapper = styled.div`
