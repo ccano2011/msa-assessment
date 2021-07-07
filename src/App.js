@@ -16,11 +16,14 @@ function App() {
   useEffect(() => {
     const getList = async () => {
       const response = await axios.get("https://jsonplaceholder.typicode.com/todos");
-      setTodos(response.data);
-      const filteredResults = response.data.filter(function (isComplete) {
-        return isComplete.completed
+      const openResults = response.data.filter(function (notComplete) {
+        return notComplete.completed === false
       })
-      setCompletedTodos(filteredResults)
+      setTodos(openResults);
+      const closedResults = response.data.filter(function (isComplete) {
+        return isComplete.completed === true
+      })
+      setCompletedTodos(closedResults)
     };
     getList();
   }, []);
