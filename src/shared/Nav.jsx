@@ -8,7 +8,7 @@ margin-bottom: 7vh;
 `
 
 const Title = styled.h1`
-padding-top: 15px;
+padding-top: 25px;
 color:whitesmoke;
 margin-bottom: 10px;
 margin-left:5vw;
@@ -20,7 +20,7 @@ list-style: none;
 display: flex;
 justify-content: space-around;
 padding: 0;
-padding-top: 3vh;
+padding-top: 30px;
 a{
     text-decoration: none;
     color:inherit;

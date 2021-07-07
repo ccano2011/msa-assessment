@@ -12,6 +12,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [todos, setTodos] = useState([])
   const [completedTodos, setCompletedTodos] = useState([])
+  const [user, setUser] = useState([])
 
   useEffect(() => {
     const getList = async () => {
@@ -24,10 +25,17 @@ function App() {
         return isComplete.completed === true
       })
       setCompletedTodos(closedResults)
+      const userId = response.data.filter(function (userId) {
+        return userId
+      })
+      setUser(userId)
     };
     getList();
   }, []);
 
+  console.log(user)
+  console.log(todos)
+  console.log(completedTodos)
 
   const toggle = () => {
     setIsOpen(!isOpen)

@@ -17,6 +17,7 @@ align-items: center;
     margin-top:20px;
     display: flex;
     width: 90vw;
+    max-width:375px;
     padding-top: 15px;
     padding-bottom:15px;
     padding-left: 15px;
@@ -141,6 +142,16 @@ li{
 .checkbox-label input:checked ~ .checkbox-custom.circular::before {
     border-radius: 50%;
 }
+
+.userID{
+    display:flex;
+    margin-top: -35px;
+    margin-bottom: 17px;
+    margin-left: -115px;
+    font-size: 14px;
+    background-color: #6363636e;
+    padding: 3px;
+}
 `
 
 function Closed(props) {
@@ -149,9 +160,9 @@ function Closed(props) {
     }
     return (
         <ClosedStyle>
-            <MappedTodos>
-                {
-                    props.todos.map((todo) =>
+            {
+                props.todos.map((todo) =>
+                    <MappedTodos>
                         <div className="todo-item" key={todo.id}>
                             <div>
                                 <label className="checkbox-label">
@@ -162,9 +173,12 @@ function Closed(props) {
                             <li >{todo.title}
                             </li>
                         </div>
-                    )
-                }
-            </MappedTodos>
+                        <li className="userID">
+                            User: {todo.userId}
+                        </li>
+                    </MappedTodos>
+                )
+            }
         </ClosedStyle>
     );
 }
