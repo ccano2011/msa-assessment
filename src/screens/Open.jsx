@@ -23,7 +23,7 @@ align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid black;
-    border-radius: 5%;
+    border-radius: 15px;
   background-color: #282c34;
   min-height:90px;
 }
